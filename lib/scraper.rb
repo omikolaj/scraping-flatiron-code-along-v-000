@@ -15,8 +15,12 @@ class Scraper
       #course.schedule = post.css(".date").text
       #course.description = post.css("p").text
     #end
-
   end
+
+  def get_courses
+    self.get_page(".post")
+  end
+
 
 
     def print_courses
